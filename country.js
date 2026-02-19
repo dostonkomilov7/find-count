@@ -16,7 +16,7 @@ async function fn() {
     let link = `https://restcountries.com/v3.1/name/${input_content}`;
     try {
         const res = await fetch(link);
-        //hgfhtf
+        
         
         if (!res.ok) {
             input.textContent = "";
