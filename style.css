@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("./Assets/—Pngtree—world\ flags\ icons\ background\ africa_5322809.jpg") center/ cover;
+}
+.container{
+    width: 360px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(169, 220, 254);
+    border-radius: 20px;
+    border: none;
+    color: black;
+}
+.input{
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-left: 39%;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.find_btn{
+    padding: 15px 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+}
+.container img{
+    width: 360px;
+    height: 190px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+
+}
+.container .start{
+    margin-left: 40px;
+}
+ul li{
+    list-style-type: none;
+}
+li .cont{
+    font-size: 15px; 
+    color: rgb(81, 81, 81);
+    margin-bottom: 50px;
+}
