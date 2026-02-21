@@ -1,5 +1,6 @@
+import {name} from "./filter.js";
+export const container = document.querySelector(".container");
 const input = document.querySelector(".input");
-const container = document.querySelector(".container");
 const dark_btn = document.querySelector(".dark");
 const light_btn = document.querySelector(".light");
 
@@ -13,28 +14,20 @@ light_btn.addEventListener("click", () => {
 })
 
 input.addEventListener("keydown", async function fn(e) {
-    if (e.key === "Enter"){
-        try {
-            e.preventDefault();
-            let input_content = input.value.trim().toLowerCase();
-            const res = await fetch(`https://restcountries.com/v3.1/name/${input_content}`);
-            input.value = "";
-            if (!res.ok) {
-                alert("‼️ DAVLAT TOPILMADI ‼️");
-                throw new NotFoundException("DAVLAT TOPILMADI");
-            }
-            const data = await res.json();
-            getInfo(data);
-        } catch (error) {
-            console.log(error);
-        }
+    if (e.key === "Enter" && input.value && input.value !== " "){
+        if(container.innerHTML){
+            container.innerHTML = ``;
+        let input_content = input.value.trim().toLowerCase();
+        let data = name(input_content);
+        input.value = "";
+    }
     }
 })
 
-function getInfo(data) {
+export function getInfo(data) {
     const element = data[0];
     let formedPopulation = element.population.toLocaleString();
-    container.innerHTML = `
+    container.innerHTML += `
         <div class="box">
             <img src="${element.flags.png}" alt="" class="flag">
             <div class="info">
@@ -46,17 +39,14 @@ function getInfo(data) {
         </div>`
 
     container.addEventListener("click", () => {
-        
+        const back = document.querySelector(".exit")
+        back.addEventListener("click", () => {
+        })
     });
 }
-
 class NotFoundException extends Error {
     constructor(message) {
         super(message);
         this.name = "NOT FOUND EXCEPTION ERROR";
     }
 }
-// language.textContent = `🗣️ ${rightLang.join(", ")}`;
-// currency.textContent = `💰 ${rightCurr.join(", ")}`;
-// let rightLang = Object.values(element.languages);
-// let rightCurr = Object.values(element.currencies).map((curren) => (curren.name));
