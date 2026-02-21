@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    /* background: url("./Assets/—Pngtree—world\ flags\ icons\ background\ africa_5322809.jpg") center/ cover; */
+}
+header{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dark{
+    background-color: transparent;
+    padding: 10px 30px;
+    border: none;
+    font-size: 15px;
+}
+.light{
+    background-color: transparent;
+    padding: 10px 30px;
+    border: none;
+    font-size: 15px;
+    display: none;
+
+}
+.search{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    padding-right: 250px;
+    font-size: 15px;
+}
+.filter{
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    gap: 25px;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: 260px;
+    height: 380px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.box img{
+    border-radius: 10px 10px 0 0;
+    width: 260px;
+    height: 160px;
+}
+.info {
+    padding: 0 20px;
+}
+p b{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    margin-right: 10px;
+}
