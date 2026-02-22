@@ -1,0 +1,73 @@
+.base{
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+}
+.base .exit{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+    background-color: white;
+    margin-top: 50px;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.base .exit:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-1px);
+    transition: 0.7s;
+}
+.info_container{
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+.image_box{
+    width: 50%;
+}
+.image_box img{
+    width: 100%;
+    margin-top: 40px;
+}
+.details_box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    gap: 70px;
+}
+.left_card{
+    width: 220px;
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+}
+.right_card{
+    margin-top: 50px;
+    grid-row: 1/span 2;
+    grid-column: 2/span 1;
+}
+.bottom_card{
+    grid-row:  2/span 1;
+    grid-column: 1/span 2;
+}
+.bottom_card button{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+    background-color: white;
+    padding: 5px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.bottom_card button:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-1px);
+    transition: 0.7s;
+}
+.details_box p b{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    margin-right: 10px;
+}

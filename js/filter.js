@@ -1,5 +1,5 @@
 import { getInfo, container } from "./main.js";
-const select = document.querySelector(".filter")
+const select = document.querySelector(".filter");
 
 export async function name(content){
     try {

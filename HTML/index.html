@@ -3,6 +3,7 @@
     <head>
         <title>Find Country</title>
         <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/data.css">
     </head>
     <body>
         <header>
@@ -12,21 +13,28 @@
                 <button class="light" style="align-items: center;"><span style="font-size: 20px;">☼ </span>Light Mode</button>
             </nav>
         </header>
-        <div class="search">
-            <input type="text" class="input" placeholder="🔍  Search for a country...">
-            <select class="filter">
-                <option selected disabled hidden>Filter by region</option>
-                <option class="asia">Asia</option>
-                <option class="africa">Africa</option>
-                <option class="america">Americas</option>
-                <option class="europe">Europe</option>
-                <option class="oceania">Oceania</option>
-            </select>
+        <div class="main">
+            <div class="search">
+                <input type="text" class="input" placeholder="🔍  Search for a country...">
+                <select class="filter">
+                    <option selected disabled hidden>Filter by region</option>
+                    <option class="asia">Asia</option>
+                    <option class="africa">Africa</option>
+                    <option class="america">Americas</option>
+                    <option class="europe">Europe</option>
+                    <option class="oceania">Oceania</option>
+                </select>
+            </div>
+            <section class="container"></section>
         </div>
-        <main>
-            <section class="container">
+        <div class="base">
+            <button class="exit">← Back</button>
+            <section class="info_container">
+                <div class="image_box"></div>
+                <div class="details_box"></div>
             </section>
-        </main>
+        </div>
+        
         <script type="module" src="../js/filter.js"></script>
         <script type="module" src="../js/main.js"></script>
     </body>
